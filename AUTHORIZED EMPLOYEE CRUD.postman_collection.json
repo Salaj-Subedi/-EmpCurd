@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "cddaddc1-5878-4e04-9122-921b9d979641",
+		"name": "AUTHORIZED EMPLOYEE CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22488688"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/users/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Salaj subedi\",\r\n    \"password\":\"test123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/users/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Salaj subedi\",\r\n    \"password\":\"test123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/emps",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbGFqIHN1YmVkaSIsImlkIjoiNjMxNThlNjVjMjkyMzNhMTUyMWYwN2RlIiwiaWF0IjoxNjYyMzU3MjcyfQ.W7J84mwGbZmzgd7wUv1uUgNCVQTdPoVLzeFYMugfZlo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"JOHN CENA\",\r\n    \"phone\":9813200000,\r\n    \"position\":\"WWE GUY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/emps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"emps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/emps/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbGFqIHN1YmVkaSIsImlkIjoiNjMxNThlNjVjMjkyMzNhMTUyMWYwN2RlIiwiaWF0IjoxNjYyMzU3MjcyfQ.W7J84mwGbZmzgd7wUv1uUgNCVQTdPoVLzeFYMugfZlo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/emps/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"emps",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/emps/63158f3d29e539cbd954b68a",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbGFqIHN1YmVkaSIsImlkIjoiNjMxNThlNjVjMjkyMzNhMTUyMWYwN2RlIiwiaWF0IjoxNjYyMzU3MjcyfQ.W7J84mwGbZmzgd7wUv1uUgNCVQTdPoVLzeFYMugfZlo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/emps/63158f3d29e539cbd954b68a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"emps",
+						"63158f3d29e539cbd954b68a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/emps/63158fef29e539cbd954b695",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbGFqIHN1YmVkaSIsImlkIjoiNjMxNThlNjVjMjkyMzNhMTUyMWYwN2RlIiwiaWF0IjoxNjYyMzU3MjcyfQ.W7J84mwGbZmzgd7wUv1uUgNCVQTdPoVLzeFYMugfZlo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"JOHN CENA\",\r\n    \"phone\":9813200000,\r\n    \"position\":\"CANT SEE HIM MAN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/emps/63158fef29e539cbd954b695",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"emps",
+						"63158fef29e539cbd954b695"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/emps/63158fef29e539cbd954b695",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbGFqIHN1YmVkaSIsImlkIjoiNjMxNTgwYzM5ZGE3MDU1ZjRiYTVmNmIzIiwiaWF0IjoxNjYyMzUzNzYyfQ.m4QnnZT6IwXUhY7gZX3ktUIE7orl3-jS2wd7qX0cqcQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/emps/63158fef29e539cbd954b695",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"emps",
+						"63158fef29e539cbd954b695"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
