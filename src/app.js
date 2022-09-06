@@ -16,7 +16,6 @@ app.get("/", (req, res) => {
 
 const mongoose = require("mongoose");
 mongoose
-  // .connect("mongodb+srv://salaj:test123@cluster0.6du03pb.mongodb.net/test")
   .connect(process.env.DB)
   .then(() => {
     console.log("Success in connecting to your database.");
